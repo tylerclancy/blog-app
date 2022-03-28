@@ -9,16 +9,16 @@ export default function Navbar() {
       <ul>
         <li>
           <Link href='/'>
-            <button>Feed</button>
+            <button className='btn-logo'>Feed</button>
           </Link>
         </li>
 
         {/* User is signed in and has username */}
         {username && (
           <>
-            <li>
+            <li className='push-left'>
               <Link href='/admin'>
-                <button>Write Post</button>
+                <button className='btn-blue'>Write Post</button>
               </Link>
             </li>
             <li>
@@ -33,7 +33,7 @@ export default function Navbar() {
         {!username && (
           <li>
             <Link href='/enter'>
-              <button>Log in</button>
+              <button className='btn-blue'>Log in</button>
             </Link>
           </li>
         )}
