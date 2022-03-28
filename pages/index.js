@@ -3,10 +3,12 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
+import Loader from '../components/Loader';
+
 export default function Home() {
   return (
     <div>
-      <Link href='/tyler'><a>Tyler</a></Link>
+      <Loader show />
     </div>
   );
 }
