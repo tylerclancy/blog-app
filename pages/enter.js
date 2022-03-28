@@ -37,5 +37,5 @@ function SignOutButton() {
 }
 
 function UsernameForm() {
-
+  return 'yo';
 }
