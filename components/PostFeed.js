@@ -21,7 +21,7 @@ function PostItem({ post, admin = false }) {
       </Link>
       <Link href={`/${post.username}/${post.slug}`}>
         <h2>
-          <a>By @{post.title}</a>
+          <a>{post.title}</a>
         </h2>
       </Link>
 
@@ -29,7 +29,7 @@ function PostItem({ post, admin = false }) {
         <span>
           {wordCount} words. {minutesToRead} minute read.
         </span>
-        <span>♥ {post.heartCount} Hearts </span>
+        <span className='push-left'>💗 {post.heartCount} Likes </span>
       </footer>
     </div>
   );
